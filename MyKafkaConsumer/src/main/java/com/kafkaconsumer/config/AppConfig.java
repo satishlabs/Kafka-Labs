@@ -33,7 +33,6 @@ public class AppConfig {
 				System.out.println("AppConfig -- stringKafkaListenerContainerFactory()");
 				
 				ConcurrentKafkaListenerContainerFactory<String, String> factory = new ConcurrentKafkaListenerContainerFactory<String, String>();
-				
 				factory.setConsumerFactory(stringConsumerFactory());
 				
 				return factory;
